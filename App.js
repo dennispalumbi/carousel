@@ -80,7 +80,7 @@ const Animal = ({ name, color, animatedScale, index, style,animatedBgColor,pageO
           style,
           styles.animalAnimatedBox,
         ]}>
-        <View  ><Icon name={"user"} size={20} /></View>
+        <View  ><Icon name={"pluscircle"} size={20} color={color} /></View>
       </Animated.View>
     {/*</TouchableOpacity>
  
@@ -148,9 +148,9 @@ class Example extends Component {
                 pageOffset+0,
                 pageOffset+60,
                 pageOffset+140,
-                pageOffset+250,
+                pageOffset+200,
+                pageOffset+260,
                 pageOffset+300,
-                pageOffset+500,
               ],
 
               outputRange: [ 0.1,0.4,0.8,1.3,0.8,0.4,0.1],

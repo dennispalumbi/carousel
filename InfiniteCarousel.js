@@ -105,7 +105,7 @@ class InfiniteCarousel extends Component {
   };
 
   _roundPage = () => {
-    const pageCenter = Math.round(this.state.containerDimensions.width / 2);//
+    const pageCenter = Math.round(this.state.containerDimensions.width / 6);//
     const relativePos = (this._xScrollPosition + pageCenter) / this._pageWidth;
     const page = Math.abs(Math.floor(relativePos) - 1);
     this._moveToPage(page, true, this._setCritical);
